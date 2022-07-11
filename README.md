@@ -1,2 +1,2 @@
 # MyWorld
-Respositorio creado para ublicar Mi Mundo.
+Respositorio creado para publicar Mi Mundo.
