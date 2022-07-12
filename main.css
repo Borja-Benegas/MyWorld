@@ -1,6 +1,70 @@
-/*Etiquetas Generales*/
-body{
-    background-image: url();
+/*ID´s*/
+#main { 
+    min-height: 100vh;
+
+    display: grid;
+    grid-template-columns: 60vw 40vw;
+    grid-template-rows:  5vh 85vh 10vh;;
+    grid-template-areas:"nav nav"
+                        "section  section"
+                        "footer footer";
 }
 
-/*ID*/
+/*Etiquetas Generales*/
+body{
+    margin: 0;
+    height: 0;
+    background-image: url("./img/opcion-fondo2.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+/*Menú*/
+nav{
+    grid-area: nav;
+    background-color: black;
+    color: white;
+    font-family: 'Comfortaa', cursive;
+
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav a{
+    text-align: center;
+    padding: 1.5vh;
+    color: white;
+    text-decoration: none;
+
+}
+
+nav a:hover{
+    background-color: white;
+    color: black;
+}
+/*Section*/
+section{
+    grid-area: section;
+
+    border: 2px solid black;
+    color: black;
+    text-align: center;
+}
+/**
+footer{
+    grid-area: footer;
+
+    border: 2px solid black;
+    color: white;
+    text-align: center;
+}*/
+
+
+
+
+
+
+
+
+
