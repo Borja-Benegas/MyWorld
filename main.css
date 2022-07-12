@@ -108,3 +108,13 @@ body{
 #acerca-de-mi #parrafos-acerca ul li{
     line-height: 1.5;
 }
+
+@media (max-width: 600px) {
+    #acerca-de-mi #parrafos-acerca{
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+    }
+  }
