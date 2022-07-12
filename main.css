@@ -1,13 +1,11 @@
 /*ID´s*/
 #main { 
     min-height: 100vh;
-
+    font-family: 'Comfortaa', cursive;
     display: grid;
-    grid-template-columns: 60vw 40vw;
-    grid-template-rows:  5vh 85vh 10vh;;
-    grid-template-areas:"nav nav"
-                        "section  section"
-                        "footer footer";
+    grid-template-rows:   95vh 5vh;;
+    grid-template-areas:"section  section"
+                        "nav nav";
 }
 
 /*Etiquetas Generales*/
@@ -21,14 +19,28 @@ body{
     background-size: cover;
 }
 /*Menú*/
+
 nav{
     grid-area: nav;
+    
     background-color: black;
+    opacity:0.8;
     color: white;
-    font-family: 'Comfortaa', cursive;
 
     display: flex;
-    justify-content: flex-end;
+    justify-content:space-between;
+}
+
+nav #imagen{
+    width: 15px;
+    height: 15px;
+    padding-left: 15px;
+}
+
+nav #enlaces{
+    display: flex;
+    justify-content: center;
+    align-items:center;
 }
 
 nav a{
@@ -36,21 +48,47 @@ nav a{
     padding: 1.5vh;
     color: white;
     text-decoration: none;
-
 }
 
 nav a:hover{
     background-color: white;
     color: black;
+    text-decoration: underline;
 }
 /*Section*/
 section{
     grid-area: section;
-
-    border: 2px solid black;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
     color: black;
     text-align: center;
 }
+
+section div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    width: 80%;
+    padding: 25px;
+    background-color: white; 
+}
+
+section #foto{
+    width: 100px;
+    height: 100px;
+}
+
+section #introduccion{
+    text-align:justify;
+    color: black;
+    line-height: 3vh;
+}
+
 /**
 footer{
     grid-area: footer;
