@@ -1,108 +1,110 @@
-/*ID´s*/
-#main { 
-    min-height: 100vh;
-    font-family: 'Comfortaa', cursive;
-    display: grid;
-    grid-template-rows:   95vh 5vh;;
-    grid-template-areas:"section  section"
-                        "nav nav";
-}
-
 /*Etiquetas Generales*/
 body{
-    margin: 0;
-    height: 0;
+    margin:0;
+    font-family: 'Comfortaa', cursive;
+}
+
+#main{
+    width: 100%;
+    height:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+/*inicio*/
+#imagen-fondo{
+    width: 100%;
+    height: 95vh;
+    position: static;
     background-image: url("./img/opcion-fondo2.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
 }
+
+#introduccion{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#introduccion #foto{
+    width: 100px;
+    height: 100px;
+}
+
+#introduccion #texto{
+    text-align:justify;
+    color: black;
+    line-height: 3vh;
+    width: 50%;
+    
+}
+
 /*Menú*/
 
-nav{
-    grid-area: nav;
-    
+#menu{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
     background-color: black;
-    opacity:0.8;
-    color: white;
-
-    display: flex;
-    justify-content:space-between;
 }
 
-nav #imagen{
-    width: 15px;
-    height: 15px;
-    padding-left: 15px;
-}
-
-nav #enlaces{
+#menu #enlaces {
     display: flex;
+    align-items: center;
     justify-content: center;
-    align-items:center;
 }
-
-nav a{
+#menu #enlaces a{
     text-align: center;
     padding: 1.5vh;
     color: white;
     text-decoration: none;
 }
 
-nav a:hover{
+#menu #enlaces a:hover{
     background-color: white;
     color: black;
     text-decoration: underline;
 }
-/*Section*/
-section{
-    grid-area: section;
-    
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-    color: black;
-    text-align: center;
-}
 
-section div{
+/*Cuerpo*/
+#cuerpo{
     display: flex;
-    align-items: center;
+    align-content: center;
     justify-content: center;
-    flex-direction: column;
-
     width: 80%;
-    padding: 25px;
-    background-color: white; 
+}
+/*Acerca de Mí*/
+#acerca-de-mi{
+    width: 100%;
 }
 
-section #foto{
-    width: 100px;
-    height: 100px;
+#acerca-de-mi h2{
+    color:#2874A6;
+    padding: 15px;
 }
 
-section #introduccion{
-    text-align:justify;
-    color: black;
-    line-height: 3vh;
+#acerca-de-mi #parrafos-acerca{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    
 }
 
-/**
-footer{
-    grid-area: footer;
+#acerca-de-mi #parrafos-acerca p{
+    line-height: 1.5;
+    text-align: justify;
+    margin-right: 10px;
+}
 
-    border: 2px solid black;
-    color: white;
-    text-align: center;
-}*/
-
-
-
-
-
-
-
-
-
+#acerca-de-mi #parrafos-acerca ul li{
+    line-height: 1.5;
+}
