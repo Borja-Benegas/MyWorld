@@ -166,6 +166,7 @@ body{
 }
 
 #contacto form textarea{
+    width: 94%;
     font-family: 'Comfortaa', cursive;
     padding: 10px;
     border-style: none;
@@ -216,5 +217,14 @@ body{
         flex-direction: column;
         padding: 15px;
         grid-gap: 1em;
+    }
+
+    #contacto form textarea{
+        
+        font-family: 'Comfortaa', cursive;
+        padding: 10px;
+        border-style: none;
+        border-bottom: 2px  #CACCCD solid;
+        resize: none;
     }
   }
