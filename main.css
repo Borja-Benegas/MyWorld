@@ -143,13 +143,7 @@ body{
     grid-column: 1/3;
 }
 
-#contacto form #div-input1 {
-    width: 100%;
-}
 
-#contacto form #div-input2 {
-    width: 100%;
-}
 
 #contacto form input {
     font-family: 'Comfortaa', cursive;
@@ -225,9 +219,12 @@ body{
         padding: 15px;
         grid-gap: 1em;
     }
-
+    
+    #contacto form #div-textarea{
+        grid-column: 1/1;
+    }
+     
     #contacto form textarea{
-        
         font-family: 'Comfortaa', cursive;
         padding: 10px;
         border-style: none;
