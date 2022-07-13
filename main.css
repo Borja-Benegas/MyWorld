@@ -110,6 +110,21 @@ body{
 }
 
 @media (max-width: 1000px) {
+    #imagen-fondo{
+        width: 100%;
+        height: 90vh;
+        position: static;
+        background-image: url("./img/opcion-fondo2.jpg");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
     #acerca-de-mi #parrafos-acerca{
         display: flex;
         align-content: center;
